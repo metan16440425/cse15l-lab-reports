@@ -1,6 +1,7 @@
 # Lab Report 1
 ## cd:
 1. No Argument:
+   ![Image](cdnoarg.jpg)
 2. Path:
 3. Directory:
 ## ls:
