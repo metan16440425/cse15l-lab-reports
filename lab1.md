@@ -6,16 +6,24 @@
    When cd is executed without any arguments, it changes the current working directory to the user's home directory. And I am already in the home directory, so no change noticed.  
    There is no error.
 2. Path:  
-   ![Image](cdwithpath.jpg)
-   No output is shown in the terminal.
-   The current working directory is /home/lecture1.  
-   The command changes the current working directory to the specified directory.
+   ![Image](cdwithpath.jpg)  
+   No output is shown in the terminal.  
+   The current working directory is /home.    
+   The command changes the current working directory to the specified directory.  
    No error
-4. Directory:
+3. Directory:  
+   ![Image](cdwithfile.jpg)  
+   The current working directory is /home.   
+   I got the output because the cd command navigates directories, not files.  
+   It is an error. Because it is provided with a path to the file.
 ## ls:
-1. No Argument:
-2. Path:
-3. Directory:
+1. No Argument:  
+   ![Image](lsnoarg.jpg)   
+   The current working directory is /home.  
+   The ls command with no arguments will list the contents of the current directory.  
+   No Error
+3. Path:
+4. Directory:
 ## cat:
 1. No Argument:
 2. Path:
