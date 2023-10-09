@@ -41,7 +41,7 @@
 2. Directory:  
    ![Image](catpath.jpg).  
    Working Directory: /home  
-   Directories do not have content in the traditional sense to display. So it informs that it is a directory.  
+   Directories do not have content to display. So it informs that it is a directory.  
    It is an error. Because cat expects files not a directory.
  3. File:  
     ![Image](catfile.jpg)  
