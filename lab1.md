@@ -39,9 +39,12 @@
    There is nothing because cat is expecting an input, and it now waits for users to input something.  
    No Error
 2. Path:  
-   ![Image]{catpath.jpg).  
+   ![Image](catpath.jpg).  
    Working Directory: /home  
    Directories do not have content in the traditional sense to display. So it informs that it is a directory.  
    It is an error. Because cat expects files not a directory.
  3. Directory:  
-    
+    ![Image](catfile.jpg)  
+    Working Directory: /home  
+    The cat command, when provided with a file path as an argument, reads the file and displays its content on output.  
+    No Error
