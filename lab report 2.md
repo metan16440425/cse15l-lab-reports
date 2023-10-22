@@ -22,7 +22,7 @@ class StringHandler implements URLHandler {
                 System.out.println("After adding message: " + messages);
                 return String.join("\n", messages);
             } else {
-                return "Invalid request. Please provide a message with ?s=<message>.";
+                return "Invalid request";
             }
         } else {
             return "404 Not Found!";
@@ -38,7 +38,6 @@ public class StringServer {
         }
 
         int port = Integer.parseInt(args[0]);
-
         Server.start(port, new StringHandler());
     }
 }
@@ -48,7 +47,7 @@ public class StringServer {
 - **Methods Called**: `handleRequest`
 - **Relevant Arguments**: `url` with value `new URI("/add-message?s=Hello")`
 - **Values of Relevant Fields**: 
-  -  `messages` = `[]` (an empty list).
+  -  `messages` = `[]` 
 - **How Values Change**: 
   - The `messages` list gets updated to `["1. Hello"]`
  
@@ -66,4 +65,5 @@ public class StringServer {
 - ![Image](login.png)
 
   ## Part 3
-  
+- I have learned a lot in week 2 and 3. I did not know how to create and run your own local and remote server through using the terminal. And it is less complex then I thought it would be.  
+  I also did not know how to set up SSH Keys for Easy Access by creating SSH key to bypass entering password.It saves a lot of time.
