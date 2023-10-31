@@ -48,14 +48,19 @@ public class StringServer {
 - **Relevant Arguments**: `url` with value `new URI("/add-message?s=Hello")`
 - **Values of Relevant Fields**: 
   -  `messages` = `[]` 
-- **How Values Change**: 
+- **How Values Change**:
+  - The value before was just '[]'
   - The `messages` list gets updated to `["1. Hello"]`
+  - The code identifies a request to "/add-message" and extracts the message "Hello" from the URI query. It then adds "Hello" according to its sequence number prefix to the 'message' list.
  
 - ![Image](add2.png)
 - **Methods Called:** :`handleRequest`
 - **Relevant Arguments:** : `url` with value `new URI("/add-message?s=How+are+you+123")`
 - **Values of Relevant Fields:** :`messages` = `["1. Hello"]`
-- **How Values Change:** :The `messages` list gets updated to `["1. Hello", "2. How+are+you+123"]`
+- **How Values Change:** :
+  - The value before is `["1. Hello"]`
+  - The `messages` list gets updated to `["1. Hello", "2. How+are+you+123"]`
+  - The code identifies a request to "/add-message" and extracts the message "How+are+you+123" from the URI query. It then adds "How+are+you+123" according to its sequence number prefix to the 'messages' list, which previously contained `["1. Hello"]`.
 
 ## Part 2
 - ![Image](private.png)
