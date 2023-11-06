@@ -1,7 +1,7 @@
 # Lab Report 3
 ## Part 1
 - **CODE** :
-```java
+```
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
@@ -20,7 +20,7 @@ public class ListTests {
     }
 
 ```
-```java
+```
     @Test
     public void testMergeNoBugInduced() {
         List<String> list1 = Arrays.asList("apple", "banana");
