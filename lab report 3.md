@@ -34,4 +34,51 @@ public class ListTests {
 }
 ```
 - ![Image](output.jpg)
-- 
+- Bug Before Change:
+  ```java
+      while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index1 += 1;
+    }
+  ```
+- Bug After Change:  
+ ```java
+ while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index2 += 1;
+    }
+ ```
+- **The bug in the `merge` method of `ListExamples.java` was due to the incorrect increment of `index1` instead of `index2`,
+  which led to an infinite loop and a heap space error when merging elements from `list2`. The fix changes the increment operation to `index2 += 1;`,
+  thereby allowing the method to properly iterate through and merge elements from both lists. This adjustment ensures that the merge completes correctly, with all elements ordered as intended.**
+
+## Part 2
+- ```
+  $  find ./technical -empty
+The command searches for and lists all empty files and directories within the ./technical directory, which is helpful for identifying and possibly cleaning up unused files.
+- ```
+ $ find ./technical/911report -empty
+The command searches for and lists all empty files within the ./technical/911report directory.   
+Returning nothing means there are no empty files or directories in it.
+The command option is found in https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
+
+- ```
+  $ find . -type d
+.
+./911report
+./biomed
+./government
+./government/About_LSC
+./government/Alcohol_Problems
+./government/Env_Prot_Agen
+./government/Gen_Account_Office
+./government/Media
+./government/Post_Rate_Comm
+./plos
+The command lists all directories within the current directory. The output shows the directory structure starting from the current directory, including all subdirectories. This command is useful for getting an overview of the directory hierarchy. 
+- ```
+  $ find . -type d
+.
+The command lists all directories within the current directory. This shows nothing because there is subdirectories under ./technical/biomed. 
+The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
+
