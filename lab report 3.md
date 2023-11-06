@@ -1,7 +1,7 @@
 # Lab Report 3
 ## Part 1
 - **CODE** :
-- ``` java
+``` java
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
@@ -19,8 +19,8 @@ public class ListTests {
         assertEquals( expected, result);
     }
 
-  ```
-- ``` java
+```
+``` java
     @Test
     public void testMergeNoBugInduced() {
         List<String> list1 = Arrays.asList("apple", "banana");
@@ -32,7 +32,8 @@ public class ListTests {
         assertEquals( expected, result);
     }
 }
-  ```
+```
+
 - ![Image](output.jpg)
 - Bug Before Change:
   ```java
