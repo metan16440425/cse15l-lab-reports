@@ -55,30 +55,54 @@ public class ListTests {
 ## Part 2
 - ```
   $  find ./technical -empty
-The command searches for and lists all empty files and directories within the ./technical directory, which is helpful for identifying and possibly cleaning up unused files.
+
+  ```
+- The command searches for and lists all empty files and directories within the ./technical directory, which is helpful for identifying and possibly cleaning up unused files.
+
 - ```
- $ find ./technical/911report -empty
-The command searches for and lists all empty files within the ./technical/911report directory.   
+  $ find ./technical/911report -empty
+ 
+  ```
+- The command searches for and lists all empty files within the ./technical/911report directory.   
 Returning nothing means there are no empty files or directories in it.
 The command option is found in https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 
 - ```
   $ find . -type d
-.
-./911report
-./biomed
-./government
-./government/About_LSC
-./government/Alcohol_Problems
-./government/Env_Prot_Agen
-./government/Gen_Account_Office
-./government/Media
-./government/Post_Rate_Comm
-./plos
-The command lists all directories within the current directory. The output shows the directory structure starting from the current directory, including all subdirectories. This command is useful for getting an overview of the directory hierarchy. 
+  .
+  ./911report
+  ./biomed
+  ./government
+  ./government/About_LSC
+  ./government/Alcohol_Problems
+  ./government/Env_Prot_Agen
+  ./government/Gen_Account_Office
+  ./government/Media
+  ./government/Post_Rate_Comm
+  ./plos
+  ```
+- The command lists all directories within the current directory. The output shows the directory structure starting from the current directory, including all subdirectories. This command is useful for getting an overview of the directory hierarchy. 
+
 - ```
   $ find . -type d
-.
-The command lists all directories within the current directory. This shows nothing because there is subdirectories under ./technical/biomed. 
+  .
+  ```
+- The command lists all directories within the current directory. This shows nothing because there is subdirectories under ./technical/biomed. 
 The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
+
+- ```
+  $ find ./technical/911report -type f -newer ./technical/911report/chapter-1.txt
+
+  ```
+- This command searches within the ./technical/911report directory for files (-type f) that have been modified more recently than ./technical/911report/chapter-1.txt.
+  This command is executed and returns no output, it means there are no files in the ./technical/911report directory that were modified after chapter-1.txt.
+  This is particularly useful for identifying recent changes or updates, allowing users to focus on newly modified files for review, backup, or further processing.
+-  ```
+   $ find ./technical/911report -type f -newer ./technical/911report/chapter-2.txt
+
+   ```
+- This command searches within the ./technical/911report directory for files (-type f) that have been modified more recently than ./technical/911report/chapter-2.txt.
+  This command is executed and returns no output, it means there are no files in the ./technical/911report directory that were modified after chapter-2.txt.
+  The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
+
 
