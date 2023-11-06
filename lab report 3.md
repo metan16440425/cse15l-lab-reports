@@ -1,6 +1,5 @@
 # Lab Report 3
 ## Part 1
-- **CODE** :
 ``` java
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
