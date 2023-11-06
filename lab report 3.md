@@ -104,5 +104,73 @@ The command option is found from https://www.geeksforgeeks.org/find-command-in-l
 - This command searches within the ./technical/911report directory for files (-type f) that have been modified more recently than ./technical/911report/chapter-2.txt.
   This command is executed and returns no output, it means there are no files in the ./technical/911report directory that were modified after chapter-2.txt.
   The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
-
-
+- ```
+  $ find ./technical/biomed -type f -size +50k
+  ./technical/biomed/1471-2091-3-14.txt
+  ./technical/biomed/1471-2091-3-31.txt
+  ./technical/biomed/1471-2091-3-4.txt
+  ./technical/biomed/1471-2105-2-8.txt
+  ./technical/biomed/1471-2105-3-14.txt
+  ./technical/biomed/1471-2105-3-18.txt
+  ./technical/biomed/1471-2105-3-2.txt
+  ./technical/biomed/1471-2121-2-10.txt
+  ./technical/biomed/1471-2121-3-15.txt
+  ./technical/biomed/1471-2121-3-16.txt
+  ./technical/biomed/1471-2121-3-25.txt
+  ./technical/biomed/1471-2121-3-30.txt
+  ./technical/biomed/1471-213X-3-3.txt
+  ./technical/biomed/1471-2164-4-4.txt
+  ./technical/biomed/1471-2199-2-4.txt
+  ./technical/biomed/1471-2202-3-1.txt
+  ./technical/biomed/1471-2210-1-7.txt
+  ./technical/biomed/1471-2253-2-5.txt
+  ./technical/biomed/1472-6807-3-1.txt
+  ./technical/biomed/1472-6882-1-10.txt
+  ./technical/biomed/1472-6904-2-5.txt
+  ./technical/biomed/1472-6904-3-1.txt
+  ./technical/biomed/1475-4924-1-10.txt
+  ./technical/biomed/1476-069X-2-4.txt
+  ./technical/biomed/1476-069X-2-9.txt
+  ./technical/biomed/1476-072X-2-4.txt
+  ./technical/biomed/1476-511X-1-2.txt
+  ./technical/biomed/1477-7827-1-13.txt
+  ./technical/biomed/1477-7827-1-36.txt
+  ./technical/biomed/gb-2001-2-11-research0046.txt
+  ./technical/biomed/gb-2001-2-7-research0025.txt
+  ./technical/biomed/gb-2001-3-1-research0001.txt
+  ./technical/biomed/gb-2002-3-10-research0052.txt
+  ./technical/biomed/gb-2002-3-11-research0059.txt
+  ./technical/biomed/gb-2002-3-11-research0065.txt
+  ./technical/biomed/gb-2002-3-12-research0071.txt
+  ./technical/biomed/gb-2002-3-12-research0072.txt
+  ./technical/biomed/gb-2002-3-12-research0079.txt
+  ./technical/biomed/gb-2002-3-12-research0083.txt
+  ./technical/biomed/gb-2002-3-12-research0086.txt
+  ./technical/biomed/gb-2002-3-12-research0088.txt
+  ./technical/biomed/gb-2002-3-7-research0036.txt
+  ./technical/biomed/gb-2002-3-9-research0043.txt
+  ./technical/biomed/gb-2002-3-9-research0045.txt
+  ./technical/biomed/gb-2003-4-2-r14.txt
+  ./technical/biomed/gb-2003-4-2-r9.txt
+  ./technical/biomed/gb-2003-4-3-r17.txt
+  ./technical/biomed/gb-2003-4-4-r26.txt
+  ./technical/biomed/gb-2003-4-5-r34.txt
+  ./technical/biomed/gb-2003-4-7-r42.txt
+  ./technical/biomed/gb-2003-4-7-r43.txt
+  ```
+- This searched for files larger than 50 kilobytes within the ./technical/biomed directory. The listed files are all the ones that met the criteria. This command is useful for identifying larger text files, possibly to prioritize them for review or processing, or to manage disk space usage.
+- ```
+  $ find ./technical/plos -type f -size +30k
+  ./technical/plos/pmed.0010028.txt
+  ./technical/plos/pmed.0010036.txt
+  ./technical/plos/pmed.0020018.txt
+  ./technical/plos/pmed.0020045.txt
+  ./technical/plos/pmed.0020059.txt
+  ./technical/plos/pmed.0020073.txt
+  ./technical/plos/pmed.0020103.txt
+  ./technical/plos/pmed.0020182.txt
+  ./technical/plos/pmed.0020246.txt
+  ./technical/plos/pmed.0020249.txt
+  ```
+- It identified files within the ./technical/plos directory that are larger than 30 kilobytes. This information can be valuable for tasks such as data analysis, where file size may correlate with the length or detail of content, or simply for managing storage by identifying larger files.
+  It was found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
