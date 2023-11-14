@@ -1,5 +1,6 @@
 # Lab Report 3
 ## Part 1
+- Code for A failure-inducing input for the buggy program:
 ``` java
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -19,6 +20,7 @@ public class ListTests {
     }
 
 ```
+- Code for An input that doesn’t induce a failure:
 ``` java
     @Test
     public void testMergeNoBugInduced() {
