@@ -1,6 +1,6 @@
 # Lab Report 3
 ## Part 1
-- Code for A failure-inducing input for the buggy program:
+- Code for A failure-inducing input for the merge method of list:
 ``` java
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -20,7 +20,7 @@ public class ListTests {
     }
 
 ```
-- Code for An input that doesn’t induce a failure:
+- Code for An input of the merge method that doesn’t induce a failure:
 ``` java
     @Test
     public void testMergeNoBugInduced() {
@@ -66,7 +66,7 @@ public class ListTests {
  
   ```
 - The command searches for and lists all empty files within the ./technical/911report directory.   
-Returning nothing means there are no empty files or directories in it.
+Returning nothing means there are no empty files or directories in it. It is very useful for identifying and possibly cleaning up empty files that takes up the space.
 The command option is found in https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 
 - ```
@@ -83,14 +83,14 @@ The command option is found in https://www.geeksforgeeks.org/find-command-in-lin
   ./government/Post_Rate_Comm
   ./plos
   ```
-- The command lists all directories within the current directory. The output shows the directory structure starting from the current directory, including all subdirectories. This command is useful for getting an overview of the directory hierarchy. 
+- The command lists all directories within the current directory. The output shows the directory structure starting from the current directory, including all subdirectories. This command is useful for getting an overview of the directory hierarchy. I did run these commands in the ./technical direcotry. Thie command does not require to type in directorcy location. It list all directories under current directory automatically. 
 
 - ```
   $ find . -type d
   .
   ```
-- The command lists all directories within the current directory. This shows nothing because there is subdirectories under ./technical/biomed. 
-The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
+- This command displays all the repositories and sub-repositories present in the current repository.  This shows nothing because there is subdirectories under ./technical/biomed, which is the directory I ran the command. This command is useful for getting an overview of the directory hierarchy in a very convenient way.
+The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/ 
 
 - ```
   $ find ./technical/911report -type f -newer ./technical/911report/chapter-1.txt
@@ -104,7 +104,8 @@ The command option is found from https://www.geeksforgeeks.org/find-command-in-l
 
    ```
 - This command searches within the ./technical/911report directory for files (-type f) that have been modified more recently than ./technical/911report/chapter-2.txt.
-  This command is executed and returns no output, it means there are no files in the ./technical/911report directory that were modified after chapter-2.txt.
+  This command is executed and returns no output, it means there are no files in the ./technical/911report directory that were modified after chapter-2.txt. This is useful for 
+  identifying recent changes or updates among files, allowing users to priotize working on newer files.
   The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 - ```
   $ find ./technical/biomed -type f -size +50k
@@ -174,5 +175,5 @@ The command option is found from https://www.geeksforgeeks.org/find-command-in-l
   ./technical/plos/pmed.0020246.txt
   ./technical/plos/pmed.0020249.txt
   ```
-- It identified files within the ./technical/plos directory that are larger than 30 kilobytes. This information can be valuable for tasks such as data analysis, where file size may correlate with the length or detail of content, or simply for managing storage by identifying larger files.
+- It identified files within the ./technical/plos directory that are larger than 30 kilobytes. This information can be valuable for tasks such as data analysis, where file size may correlate with the length or detail of content, or simply for managing storage by identifying larger files. This command is useful for identifying text files of certain size chosen by the user, which enable users to prioritize them for review or processing, or to manage disk space usage.
   It was found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
