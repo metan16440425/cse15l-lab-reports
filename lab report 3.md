@@ -1,7 +1,7 @@
 # Lab Report 3
 ## Part 1
-- Code for A failure-inducing input for the merge method of list:
-``` java
+- Code for A failure-inducing input for the merge method of the list:
+- ``` java
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
@@ -21,7 +21,7 @@ public class ListTests {
 
 ```
 - Code for An input of the merge method that doesn’t induce a failure:
-``` java
+- ``` java
     @Test
     public void testMergeNoBugInduced() {
         List<String> list1 = Arrays.asList("apple", "banana");
