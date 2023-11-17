@@ -2,24 +2,24 @@
 ## Part 1
 - Code for A failure-inducing input for the merge method of the list:
 - ``` java
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import java.util.Arrays;
-import java.util.List;
+  import org.junit.Test;
+  import static org.junit.Assert.assertEquals;
+  import java.util.Arrays;
+  import java.util.List;
 
-public class ListTests {
-    @Test
-    public void testMergeBugInduced() {
-        List<String> list1 = Arrays.asList("apple");
-        List<String> list2 = Arrays.asList("banana", "carrot");
+  public class ListTests {
+      @Test
+      public void testMergeBugInduced() {
+          List<String> list1 = Arrays.asList("apple");
+          List<String> list2 = Arrays.asList("banana", "carrot");
 
-        List<String> result = ListExamples.merge(list1, list2);
-        List<String> expected = Arrays.asList("apple", "banana", "carrot");
+          List<String> result = ListExamples.merge(list1, list2);
+          List<String> expected = Arrays.asList("apple", "banana", "carrot");
 
-        assertEquals( expected, result);
-    }
+          assertEquals( expected, result);
+      }
 
-```
+  ```
 - Code for An input of the merge method that doesn’t induce a failure:
 - ``` java
     @Test
@@ -31,9 +31,9 @@ public class ListTests {
         List<String> expected = Arrays.asList("apple", "banana");
 
         assertEquals( expected, result);
+      }
     }
-}
-```
+  ```
 
 - ![Image](output.jpg)
 - Bug Before Change:
