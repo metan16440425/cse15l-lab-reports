@@ -35,7 +35,7 @@
     }
   ```
 
-- ![Image](output.jpg)
+-  the output of running the tests: ![Image](output.jpg)
 - Bug Before Change:
   ```java
       while(index2 < list2.size()) {
