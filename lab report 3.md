@@ -59,14 +59,14 @@
   $  find ./technical -empty
 
   ```
-- The command searches for and lists all empty files and directories within the ./technical directory, which is helpful for identifying and possibly cleaning up unused files.
+- The command searches for and lists all empty files and directories within the ./technical directory, which is useful for identifying and possibly cleaning up unused files.
 
 - ```
   $ find ./technical/911report -empty
  
   ```
 - The command searches for and lists all empty files within the ./technical/911report directory.   
-Returning nothing means there are no empty files or directories in it. It is very useful for identifying and possibly cleaning up empty files that takes up the space.
+Returning nothing means there are no empty files or directories in it. This command is highly useful in locating and potentially clearing out unused files that occupy space.
 The command option is found in https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 
 - ```
@@ -89,7 +89,7 @@ The command option is found in https://www.geeksforgeeks.org/find-command-in-lin
   $ find . -type d
   .
   ```
-- This command displays all the repositories and sub-repositories present in the current repository.  This shows nothing because there is subdirectories under ./technical/biomed, which is the directory I ran the command. This command is useful for getting an overview of the directory hierarchy in a very convenient way.
+- This command displays all the repositories and sub-repositories present in the current repository.  This shows nothing because there is no subdirectories under ./technical/biomed, which is the directory I ran the command. This command offers a convenient method to gain an overview of the directory structure, providing a clear and easy-to-understand layout of the hierarchy.
 The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/ 
 
 - ```
@@ -104,8 +104,8 @@ The command option is found from https://www.geeksforgeeks.org/find-command-in-l
 
    ```
 - This command searches within the ./technical/911report directory for files (-type f) that have been modified more recently than ./technical/911report/chapter-2.txt.
-  This command is executed and returns no output, it means there are no files in the ./technical/911report directory that were modified after chapter-2.txt. This is useful for 
-  identifying recent changes or updates among files, allowing users to priotize working on newer files.
+  This command is executed and returns no output, it means there are no files in the ./technical/911report directory that were modified after chapter-2.txt. This is useful in pinpointing recent 
+  modifications or updates in files, enabling users to focus on the most recently altered files first.
   The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 - ```
   $ find ./technical/biomed -type f -size +50k
