@@ -89,7 +89,7 @@ The command option is found in https://www.geeksforgeeks.org/find-command-in-lin
   $ find . -type d
   .
   ```
-- This command displays all the repositories and sub-repositories present in the current repository.  This shows nothing because there is no subdirectories under ./technical/biomed, which is the directory I ran the command. This command offers a convenient method to gain an overview of the directory structure, providing a clear and easy-to-understand layout of the hierarchy.
+- This command displays all the repositories and sub-repositories present in the current repository.  This shows nothing because there is no subdirectories under ./technical/biomed, which is the directory I ran the command. This command is useful because it offers a convenient method to gain an overview of the directory structure, providing a clear and easy-to-understand layout of the hierarchy.
 The command option is found from https://www.geeksforgeeks.org/find-command-in-linux-with-examples/ 
 
 - ```
