@@ -5,7 +5,7 @@
   Effect: Initiates an SSH connection to my ieng6 account. 
 - Step 5. Clone your fork of the repository from your Github account (using the SSH URL):  
   ![Image](clone(1)(1).png)  
-  Keys pressed: `git clone git@github.com:your_username/your_repository.git` + `<enter>`    
+  Keys pressed: `git clone git@github.com:metan16440425/lab7.git` + `<enter>`    
   Effect: Clones your GitHub repository onto the ieng6 server.  
 - Step 6. Run the tests, demonstrating that they fail:
   ![Image](fail.jpg)  
