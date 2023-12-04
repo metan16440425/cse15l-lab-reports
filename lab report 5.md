@@ -61,6 +61,15 @@ The bug in the original code is in the sortByStringLength method of the ListExam
 ![Image](Structure.jpg)
 
 
-**The contents of each file before fixing the bug:** 
+**The contents of each file before fixing the bug:**   
 They are shown in previous images.  
+
+
+**The full command line (or lines) I ran to trigger the bug:**   
+They are the bash script I posted in the previous image. The specific line is `java -cp "$CPATH" org.junit.runner.JUnitCore ListExamplesTests > test_results.txt`. The terminal command is `bash test.sh`.
+
+
+
+## Part 2  
+During the second half of this quarter, I learned the valuable skill of using Vim as a text editor in a terminal environment. Vim's keyboard-centric approach allowed me to efficiently navigate and manipulate text without relying on a mouse, significantly improving my editing speed. I also learned how to generate and use an SSH key on the ieng6 machine for secure access to my GitHub account. This key allows me to authenticate without using a password, enhancing the experience of my GitHub interactions. 
 
